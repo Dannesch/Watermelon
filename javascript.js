@@ -9,9 +9,8 @@ var backColor = 210;
 
 /* ******************************** */
 // SETUP 
-
 function setup() {
-    touchStarted(); mousePressed(); draw();
+	console.log("Setup called")
 	myWidth = windowWidth;
 	myHeight = windowHeight;
   
@@ -29,6 +28,7 @@ function windowResized() {
 	myWidth = windowWidth;
 	myHeight = windowHeight;
   resizeCanvas(myWidth, myHeight);
+  console.log("Window resized to W=" + myWidth + " H=" + myHeight);
 }
 
 /* ******************************** */
