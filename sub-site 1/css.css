@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; 
+}
+
+
+body {
+  background-image: url("5-54193_assassins-creed-wallpapers-picture-is-4k-wallpaper-assassins.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+
+
+
+
+/*include padding and border into the box*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.sqSlideshow-container {
+  max-width: 50em; /*rescale the container*/
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.sqSlides {
+    display: none;
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%; /*where to have the arrows*/
+  width: auto;
+  padding: 1em; /*push abit from the edges*/
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em; /*size of the arrows*/
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 1em; /*text size*/
+  padding: 0.5em 0.8em; /*push text up abit*/
+  position: absolute;
+  bottom: 0.5em;
+  width: 100%; /*center it using 100% of the space*/
+  text-align: center;
+}
+
+/* Number text up in the corner */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1em;
+  padding: 0.6em 1em; /*position the top left text*/
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1.1em; /*size of the circles - height*/
+  width: 1.1em; /*size of the circles - width*/
+  margin: 0 0.1em; /*distance between the circles*/
+  background-color: #bbb;
+  border-radius: 50%; /*what makes em round */
+  display: inline-block;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
