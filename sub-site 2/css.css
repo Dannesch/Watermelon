@@ -8,10 +8,28 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size:cover;
+  font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.header {
+  font-family: 'Staatliches';
+  font-size: 30px;
 }
 
 .filler {
   margin-bottom: 500px;
+}
+
+
+
+
+img {
+  width: 100%;
+  height: 100%;
+  float: right;
+  border:3px solid white;
+  
 }
 
 table {
@@ -21,8 +39,19 @@ table {
   margin: auto;
   border-collapse: collapse;
   border: 2px solid white;
+  border-spacing: 0;
+  background-color: rgba(0,0,0 .5);
 }
 tr {
   text-align: center;
   color: white;
+}
+
+th {
+  border: 2px solid white;
+}
+
+td {
+  float:left;
+  text-align: left;
 }
