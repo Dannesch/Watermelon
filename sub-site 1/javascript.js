@@ -27,16 +27,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-function changeDivImage()
-{
-  var imgPath = new String();
-  imgPath = document.getElementById("background").style.backgroundImage;
-  if(imgPath == "url(images/blue.gif)" || imgPath == "")
-  {
-      document.getElementById("background").style.backgroundImage = url("Assassins-Creed-Syndicate-Wallpaper-HD-5.jpg");
-  }
-  else
-  {
-      document.getElementById("background").style.backgroundImage = "url(images/blue.gif)";
-  }
+
+
+
+
+function changeBackgroundImage() {
+  document.body.style.backgroundImage = "url('jesko.jpg')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
 }
