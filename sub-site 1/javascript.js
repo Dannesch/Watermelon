@@ -29,10 +29,15 @@ function showSlides(n) {
 
 
 
-
+var change = false;
 
 function changeBackgroundImage() {
-  document.body.style.backgroundImage = "url('jesko.jpg')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
+  if (change) {
+    document.body.style.backgroundImage = "url('creed.jpg')";
+    change = false;
+  }
+  else{
+    document.body.style.backgroundImage = "url('assassins creed 1 background.jpg')";
+    change = true;
+  }
 }
