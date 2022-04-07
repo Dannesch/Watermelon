@@ -15,8 +15,9 @@ body {
 
 
 img {
-  width: 500px;
-  height: 400px;
+  max-width: 100%;
+  max-width: 100%;
+  margin:auto;
 }
 
 .background_button {

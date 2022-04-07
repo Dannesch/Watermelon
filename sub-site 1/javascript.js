@@ -25,19 +25,17 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
+  document.body.style.backgroundImage = "url('background-images/assassins creed "+slideIndex+" background.jpg')";
 }
 
 
 
-var change = false;
 
-function changeBackgroundImage() {
-  if (change) {
-    document.body.style.backgroundImage = "url('creed.jpg')";
-    change = false;
-  }
-  else{
-    document.body.style.backgroundImage = "url('assassins creed 1 background.jpg')";
-    change = true;
-  }
+
+function changeBackgroundImage3() {
+    document.body.style.backgroundImage = "url('background-images/assassins creed 3 background.jpg')";
 }
+
+
+
+// transform x 100%
