@@ -9,17 +9,41 @@
     <script src="javascript.js"></script>
 </head>
 <body onload="currentSlide(1)">
-  
-  <button class="background_button" onclick="changeBackgroundImage();">Change</button>
-  <button onclick="document.location.href='../sub-site2/desmond.html'">Site 2</button>
+
+  <nav>
+    <a href="ralf.html"><img src=""></a>
+    <div class="links">
+        <ul>
+            <li><a href="../sub-site2/desmond.html">HOME</a></li>
+            <li><a href="">OM OSS</a></li>
+            <li><a href="">BILAGA</a></li>
+            <li><a href="">BLOG</a></li>
+            <div class="dropdown">
+              <button class="dropbtn">Beast>
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="../wikipedia-creed-Desmond/index.html">Desmond</a>
+                <a href="../wikipedia-template/index.html">Miles</a>
+              </div>
+        </ul>
+
+    </div>
+  </nav>
+  <button onclick="document.location.href='../sub-site-3-beastiary/beastiary.html'">Beastiary</button>
+  <button onclick="document.location.href='../wikipedia-template/index.html'">wikipedia</button>
 
   <!-- Slideshow container -->
   <div class="sqSlideshow-container">
 
       <!-- Full-width images with number and caption text -->
       <div class="sqSlides fade">
+        <img src="10-101968_assassins-creed-10-years.jpg" style="width:100%"> <!--width for image-->
+        <div class="text">Assassin' Creed 1</div>
+      </div>
+
+      <div class="sqSlides fade">
         <div class="numbertext">1 / 9</div>
-        <div class="slide1"></div>
         <img src="game-images/animus kopiera.jpg" style="width:100%"> <!--width for image-->
         <div class="text">Assassin' Creed 1</div>
       </div>
@@ -82,13 +106,14 @@
     <div style="text-align:center">
       <span class="dot" onclick="currentSlide(1)"></span> 
       <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span> 
       <span class="dot" onclick="currentSlide(4)"></span>
       <span class="dot" onclick="currentSlide(5)"></span>
       <span class="dot" onclick="currentSlide(6)"></span>
       <span class="dot" onclick="currentSlide(7)"></span>
       <span class="dot" onclick="currentSlide(8)"></span>
       <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
   </div>
   <br>
 </body>
