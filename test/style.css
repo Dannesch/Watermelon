@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Stardew Caps';
+  src: url("Stardew_Valley.ttf") format("truetype");
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #ff20ee;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(purple), to(orange));
+  background-image: linear-gradient(to bottom right, purple, orange);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  font: 100% "Stardew Caps", sans-serif;
+  text-align: center;
+  font-size: 5rem;
+  color: black;
+}
+
+.section {
+  width: Min(50%, 100rem);
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */

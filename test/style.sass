@@ -1,0 +1,33 @@
+@font-face
+   font-family: 'Stardew Caps'
+   src: url("Stardew_Valley.ttf") format("truetype")
+
+$font-title: 'Stardew Caps', sans-serif
+$font-stack: Helvetica, sans-serif
+$primary-color: #ff20ee
+$bg: linear-gradient(to bottom right, purple, orange)
+$img-gradient: linear-gradient(to top left, green, yellow)
+    
+
+body
+    font: 100% $font-stack
+    color: $primary-color
+    background:
+        image: $bg
+        repeat: no-repeat
+        size: cover
+        attachment: fixed
+        
+
+.title
+    font: 100% $font-title
+    text-align: center
+    font-size: 5rem
+    color: black
+    //background-image: $img-gradient
+    //-webkit-background-clip: text;
+    //-webkit-text-fill-color: transparent;
+
+.section
+    width: Min(50%, 100rem)
+    margin: auto
