@@ -7,11 +7,6 @@ body {
   margin: 0;
   font: 100% Helvetica, sans-serif;
   color: #ff20ee;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(purple), to(orange));
-  background-image: linear-gradient(to bottom right, purple, orange);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .title {
@@ -64,12 +59,77 @@ body {
   width: 100%;
 }
 
+.index {
+  width: 32%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a2a9b1;
+  background: #f8f9fa;
+  padding: 5px;
+  font-size: 95%;
+  position: relative;
+  line-height: 1.7em;
+}
+
+.index ul {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0.3em 0 0 0;
+}
+
+.contentsHeader {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.index ul li span {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.index ul {
+  padding: 0 0 5px 5px;
+}
+
+.index ul li ul li {
+  padding: 0 0 0 25px;
+}
+
+.showPanel {
+  display: none;
+}
+
+.minimizedPanel .showPanel {
+  display: block;
+}
+
+.minimizedPanel .hidePanel {
+  display: none;
+}
+
+.index.minimizedPanel {
+  width: 130px;
+}
+
+.minimizedPanel .contentsHeader {
+  text-align: left;
+}
+
+.showPanel, .hidePanel {
+  float: right;
+}
+
 @media screen and (max-width: 768px) {
   .col {
     margin: 1% 0 1% 0;
   }
   [class*='grid_'] {
     width: 100%;
+  }
+  .index {
+    width: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
