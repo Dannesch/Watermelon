@@ -82,7 +82,11 @@ img {
 
 .links {
   flex: 1;
-  text-align: center;  
+  text-align: center; 
+  background: #0FC4B1;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  position: fixed;
+  width: 100%;
 }
 
 .links ul li {
