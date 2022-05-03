@@ -10,6 +10,7 @@ $font-main: 'Red Hat Display', sans-serif
 $bg: linear-gradient(to bottom right, purple, orange)
 $img-gradient: linear-gradient(to top left, #644d2e, #2e1503)
 $bg-img: url("https://wallpaperaccess.com/full/1547801.jpg")
+$border-color: rgb(162, 169, 177)
 
 //Skriv om hur jag vill spaca text från kanterna i dokumentationen (pga sprickor)
 
@@ -48,7 +49,7 @@ body
 .title
     font: 100% $font-title
     font-size: 2rem
-    border-bottom: 1px solid #a2a9b1
+    border-bottom: 1px solid $border-color
 
 .sub-title
     font: 100% $font-title
@@ -87,12 +88,15 @@ body
 .col:first-child
     margin-left: 0 !important
 
-.grid_1_of_3
+.grid_auto
     padding-left: 1%
     width: auto
 
+.grid_1_of_3
+    width: 33%
+
 .grid_2_of_3
-    width: auto
+    width: 66%
 
 .grid_3_of_3
     width: 100%
@@ -105,7 +109,7 @@ body
     border: 
         width: 1px 
         style: solid
-        color: #a2a9b1
+        color: $border-color
     background: #f8f9fa
     padding: 5px
     font-size: 95%
