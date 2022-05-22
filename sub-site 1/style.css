@@ -9,7 +9,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: local;
-  
 }
 
 
@@ -20,9 +19,6 @@ img {
 }
 
 
-
-
-
 #ABC {
   background-color: #FBFCF8;
   height: 20%;
@@ -30,26 +26,6 @@ img {
   top: 1000px;
   left: 0;
   width: 100%;
-}
-
-section {
-  padding: 48px;
-}
-
-section .content {
-  margin: 0 auto;
-  max-width: 640px;
-}
-
-section p {
-  margin: 0;
-}
-
-.content code {
-  font-family: monospace, serif;
-  font-size: 16px;
-  color: gray;
-  white-space: nowrap;
 }
 
 
@@ -224,3 +200,4 @@ section p {
 .active, .dot:hover {
   background-color: #717171;
 }
+
