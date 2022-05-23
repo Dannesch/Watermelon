@@ -3,12 +3,19 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    toggleFade();
+    setTimeout( showSlides, 200, slideIndex += n );
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+    toggleFade();
+    showSlides(slideIndex = n);
+}
+
+function toggleFade() {
+    var bg = document.getElementById("bg");
+    bg.classList.toggle("bg-fade-animation");
 }
 
 // Maked background change with slideshow //
@@ -26,11 +33,13 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
-  document.body.style.backgroundImage = "url('background-images/assassins creed "+slideIndex+" background.jpg')";
+  //document.body.style.backgroundImage = "url('background-images/assassins creed "+slideIndex+" background.jpg')";
+  document.body.style.backgroundImage = "transparent";
+  bg.style.background = "url('background-images/assassins creed "+slideIndex+" background.jpg')";
+  toggleFade();
 }
 
 // Quote Loop //
-
 function fade($ele) {
     $ele.fadeIn(1000).delay(3000).fadeOut(1000, function() {
         var $next = $(this).next('.quote');

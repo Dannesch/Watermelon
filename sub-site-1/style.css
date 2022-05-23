@@ -17,6 +17,8 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: local;
+	min-width: 100vw;
+	min-height: 100vh;
 }
 
 /*icons in the bottom*/
@@ -62,6 +64,23 @@ body {
   position: relative;
   margin: auto;
   margin-top:250px;
+}
+
+#bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: 100vw 110vh !important;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	height: 110vh !important;
+	width: 100vw !important;
+	transition: 0.1s linear;
+	filter: opacity(1);
+}
+
+.bg-fade-animation {
+	filter: opacity(0) !important;
 }
 
 /* Next & previous buttons */
