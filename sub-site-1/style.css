@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,100&display=swap');
 
 /* Base Styles
 ********************************************************************* */
@@ -21,15 +22,34 @@ body {
 	min-height: 100vh;
 }
 
-/*icons in the bottom*/
+a:link {
+	color: #0e9d8f;
+	text-decoration: none;
+	background-color: transparent;
+}
 
+a:visited {
+	color: #0e9d8f;
+	text-decoration: none;
+	background-color:transparent;
+}
+
+a:hover {
+	color: #1fffe9;
+	background-color:transparent;
+}
+
+
+
+/*icons in the bottom*/
 .fa {
-	padding: 20px;
+	padding: 10px;
 	font-size: 30px;
-	width: 50px;
+	width: 55px;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 50%;
+	margin-right: 15px;
 }
   
 /* Hover effect */
@@ -60,7 +80,7 @@ body {
 
 /* Slideshow container */
 .sqSlideshow-container {
-  max-width: 40em; /*rescale the container*/
+  max-width: 40em;
   position: relative;
   margin: auto;
   margin-top:250px;
@@ -87,38 +107,30 @@ body {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 40%; /*where to have the arrows*/
+  top: 40%;
   width: auto;
-  padding: 1em; /*push abit from the edges*/
+  padding: 1em;
   color: white;
   font-weight: bold;
-  font-size: 1.5em; /*size of the arrows*/
+  font-size: 1.5em;
   border-radius: 0 3px 3px 0;
 }
 
-/* Position the "next button" to the right */
+/* Position for next button */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-/* Position the "prev button" to the left */
+/* Position for prev button */
 .prev {
 	left: 0;
 	border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* Hover for next and previous buttons */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Number text up in the corner */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 1em;
-  padding: 0.6em 1em; /*position the top left text*/
-  position: absolute;
-  top: 0;
+  background-color: #0e9d8f;
+  opacity:0.5;
 }
 
 .active, .dot:hover {
@@ -141,7 +153,7 @@ body {
 }
 
 /* For devices larger than 400px */
-@media (min-width: 400px) {
+@media (min-width: 400) {
 .container {
 	width: 85%;
 	padding: 0;
@@ -149,7 +161,7 @@ body {
 }
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+@media (min-width: 150px) {
 .container {
 	width: 80%;
 }
@@ -169,7 +181,12 @@ body {
 	width: 48%;
 }
 .four.columns {
-	width: 74.0%;
+	width: 75%;
+}
+
+img {
+	width:200px;
+	height: 270px;
 }
 
 /* Offsets */
@@ -183,7 +200,7 @@ body {
 	margin-left: 52%;
 }
 .offset-by-four.column,  .offset-by-four.columns {
-	margin-left: 78.0%;
+	margin-left: 64%;
 }
 }
 /* Typography */
@@ -207,9 +224,9 @@ h4 {
 	font-size: 2.4rem;
 	line-height: 1.35;
 	letter-spacing: -.08rem;
+	text-align: center;	
 }
-/* Header Section
-********************************************************************* */
+/* Header Section */
 header {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -286,8 +303,8 @@ header {
 #about {
 	padding: 100px 0 50px 0;
 }
-/* Skills Section */
-#skills {
+/* Games Section */
+#games {
 	padding: 100px 0 100px 0;
 	background-color: #F5F5F5;
 }
@@ -328,7 +345,7 @@ input[type="submit"] {
 	box-sizing: border-box;
 }
 input[type="submit"]:hover {
-	background: #e55d87;
+	background: #0e9d8f;
 	text-decoration: none;
 }
 
@@ -337,7 +354,7 @@ input[type="submit"]:hover {
 footer {
 	min-height: 120px;
 	padding: 40px 0 40px 0;
-	background: #e55d87;
+	background: #0e9d8f;
 	background: #3A3B3C;
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
 	box-sizing: border-box;
@@ -367,4 +384,76 @@ footer p {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+
+
+
+
+.nav {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+	color: #fff;
+}
+
+.nav p {
+    font-family: 'Koulen', cursive;
+    color: #222121;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 10px 20px;
+    float: left;
+}
+
+.nav ul {
+    float: left;
+}
+
+.nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.nav ul li a {
+    display: block;
+    font-family: 'Koulen', cursive;
+    color: #222121;
+    font-size: 20px;   
+    padding: 0px 50px;
+    text-decoration: none;
+
+}
+
+.nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.nav ul li:hover ul {
+    display: block;
+}
+
+.nav ul li ul li {
+    width: 140px;
+    text-align: center;
+
+}
+
+.nav ul li ul li a {
+    padding: 8px 10px;
+}
+
+.nav ul li ul li a:hover {
+    background-color: #f3f3f3;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }

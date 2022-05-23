@@ -33,7 +33,6 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
-  //document.body.style.backgroundImage = "url('background-images/assassins creed "+slideIndex+" background.jpg')";
   document.body.style.backgroundImage = "transparent";
   bg.style.background = "url('background-images/assassins creed "+slideIndex+" background.jpg')";
   toggleFade();
