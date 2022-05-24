@@ -1,15 +1,7 @@
-@font-face
-    font-family: 'Stardew'
-    src: url("Stardew_Valley.ttf") format("truetype")
+@import assets/variables
+@import assets/grid
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Staatliches&display=swap')
-
-$font-title-screen: 'Stardew', sans-serif
-$font-title: 'Staatliches', cursive
-$font-main: 'Red Hat Display', sans-serif
-$img-gradient: linear-gradient(to top left, #644d2e, #2e1503)
 $bg-img: url("https://wallpaperaccess.com/full/1547801.jpg")
-$border-color: #a2a9b1
 
 //Skriv om hur jag vill spaca text från kanterna i dokumentationen (pga sprickor)
 
@@ -22,22 +14,7 @@ body
 
 ///////////////////////
 .title-screen
-    margin: 0
-    padding: 0
-    display: grid
-    place-items: center
-    width: 100%
-    height: 95vh
-    background:
-        image: $bg-img
-        repeat: no-repeat
-        size: cover
-    h1
-        background-image: $img-gradient
-        -webkit-background-clip: text
-        -webkit-text-fill-color: transparent
-        font: 100% $font-title-screen
-        font-size: 6rem
+    @include title-screen($bg-img, $img-gradient)
 
 .section
     clear: both
@@ -59,46 +36,11 @@ body
 
 .iframe-wrapper
     margin-bottom: 1%
-    position: relative
-    overflow: hidden
-    padding-bottom: 28.125%
+    @include iframe(1/2)
     iframe
-        position: absolute
-        top: 0
-        left: 0
-        width: 50%
-        height: 100%
-        border: 0
         padding:
             left: 25%
             right: 25%
-
-///////////////////////
-.row
-    clear: both
-    margin: 0
-    padding: 0
-
-.col
-    display: block
-    float: left
-    margin: 1% 0 1% 1%
-
-.col:first-child
-    margin-left: 0 !important
-
-.grid_auto
-    padding-left: 1%
-    width: auto
-
-.grid_1_of_3
-    width: 33%
-
-.grid_2_of_3
-    width: 66%
-
-.grid_3_of_3
-    width: 100%
 
 //////////////////////////////
 
@@ -154,13 +96,6 @@ body
 
 ///////////////////////
 @media screen and (max-width: 768px)
-    .col
-        margin: 1% 0 1% 0
-
-    [class*='grid_']
-        padding-left: 0%
-        width: 100%
-
     .index
         width: auto
     

@@ -1,0 +1,27 @@
+@import ../assets/variables
+@import ../assets/grid
+$bg-img: url("https://wallpaperaccess.com/full/1547801.jpg")
+
+*
+    scroll-behavior: smooth
+
+body
+    margin: 0
+    font: 100% $font-main
+
+.title-screen
+    @include title-screen($bg-img, $img-gradient)
+
+.row
+    margin-top: 3%
+
+.iframe-wrapper
+    margin-left: 1%
+    @include iframe(1)
+
+.image
+    margin:
+        left: 2%
+        right: 1%
+    width: 100%
+    height: 100%
