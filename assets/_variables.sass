@@ -10,7 +10,15 @@ $font-main: 'Red Hat Display', sans-serif
 $img-gradient: linear-gradient(to top left, #644d2e, #2e1503)
 $border-color: #a2a9b1
 
+.line
+    border:
+        bottom-style: solid
+        width: 0.15em
+        color: $border-color
+
+
 @mixin iframe($ratio)
+    border: none
     position: relative
     overflow: hidden
     padding-bottom: CALC(56.25%*$ratio)
