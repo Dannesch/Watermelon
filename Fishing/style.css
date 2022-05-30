@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Staatliches&display=swap");
+@font-face {
+  font-family: 'Stardew';
+  src: url("../assets/Stardew_Valley.ttf") format("truetype");
+}
+
+.spacing {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.line {
+  border-bottom-style: solid;
+  border-width: 0.15em;
+  border-color: #a2a9b1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font: 100% "Red Hat Display", sans-serif;
+}
+
+.title-screen {
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 95vh;
+  background-image: url("https://wallpaperaccess.com/full/1547801.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-screen h1 {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#644d2e), to(#2e1503));
+  background-image: linear-gradient(to top left, #644d2e, #2e1503);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: 100% "Stardew", sans-serif;
+  font-size: 6rem;
+}
+
+.row {
+  margin-top: 3%;
+}
+
+.iframe-wrapper {
+  margin-left: 1%;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: CALC(56.25%);
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: CALC(100%);
+  height: 100%;
+  border: 0;
+}
+
+.image {
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 96%;
+  height: auto;
+}
+
+.row {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1%;
+}
+
+.col:first-child {
+  margin-left: 0 !important;
+}
+
+.grid_1 {
+  width: 100%;
+}
+
+.grid_auto {
+  width: auto;
+}
+
+.grid_1_of_2 {
+  width: 49%;
+}
+
+.grid_1_of_3 {
+  width: 33%;
+}
+
+.grid_2_of_3 {
+  width: 66%;
+}
+
+.grid_1_of_4 {
+  width: 24%;
+}
+
+.grid_3_of_4 {
+  width: 74%;
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    padding: 0;
+    width: 100%;
+  }
+  .iframe-wrapper {
+    margin: 0;
+  }
+  .col {
+    margin: 1% 0 1% 0;
+  }
+  [class*='grid_'] {
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
