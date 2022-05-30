@@ -15,9 +15,6 @@ body {
 	font-weight: 400;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	color: #222;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: local;
 	min-width: 100vw;
 	min-height: 100vh;
 }
@@ -55,24 +52,6 @@ a:hover {
 /* Hover effect */
 .fa:hover {
 	opacity: 0.7;
-}
-
-/* Facebook */
-.fa-facebook {
-	background: #3B5998;
-	color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-	background: #55ACEE;
-	color: white;
-}
-
-/* Instagram */
-.fa-instagram {
-	background:#8a3ab9;
-	color: white;
 }
 
 /*include padding and border into the box*/
@@ -175,7 +154,7 @@ a:hover {
 	width: 48%;
 }
 .two.columns {
-	width: 22%;
+	width: 30%;
 }
 .three.columns {
 	width: 48%;
@@ -224,7 +203,7 @@ h4 {
 	font-size: 2.4rem;
 	line-height: 1.35;
 	letter-spacing: -.08rem;
-	text-align: center;	
+	text-align: left;	
 }
 /* Header Section */
 header {
@@ -386,21 +365,39 @@ footer p {
 	clear: both;
 }
 
+.row2 {
+	margin-left:80px;
+}
+
+.row2:after {
+	content: "";
+	display: block;
+	clear: both;
+}
 
 
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 
 .nav {
     width: 100%;
     height: 60px;
     background-color: #fff;
-	color: #fff;
+    display: flex;
+	position: relative;
+	z-index: 999;
 }
 
 .nav p {
     font-family: 'Koulen', cursive;
     color: #222121;
-    font-size: 30px;
+    font-size: clamp(40px, 2vw, 4em);
     line-height: 40px;
     padding: 10px 20px;
     float: left;
@@ -408,20 +405,28 @@ footer p {
 
 .nav ul {
     float: left;
+    display: flex;
+    flex-direction: color;
+    gap: 2em;
+    margin: auto;
+    margin-left: 1em;
+    padding: auto;
 }
 
 .nav ul li {
     float: left;
     list-style: none;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .nav ul li a {
     display: block;
     font-family: 'Koulen', cursive;
     color: #222121;
-    font-size: 20px;   
-    padding: 0px 50px;
+    font-size: clamp(1.5em, 2vw, 2em);
+    padding: 0;
     text-decoration: none;
 
 }
@@ -430,16 +435,18 @@ footer p {
     display: none;
     position: absolute;
     background-color: #fff;
-    padding: 10px;
+    padding: 5px;
     border-radius: 0px 0px 7px 7px;
 }
 
 .nav ul li:hover ul {
     display: block;
+
 }
 
 .nav ul li ul li {
-    width: 140px;
+	min-width:140px;
+    width: 250px;
     text-align: center;
 
 }
@@ -450,10 +457,4 @@ footer p {
 
 .nav ul li ul li a:hover {
     background-color: #f3f3f3;
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
 }
