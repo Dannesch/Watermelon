@@ -4,10 +4,17 @@
   src: url("../assets/Stardew_Valley.ttf") format("truetype");
 }
 
+.spacing {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .line {
   border-bottom-style: solid;
   border-width: 0.15em;
   border-color: #a2a9b1;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 * {
@@ -67,11 +74,6 @@ body {
   padding-right: 2%;
   width: 96%;
   height: auto;
-}
-
-.spacing {
-  margin-left: 1%;
-  margin-right: 1%;
 }
 
 .row {
