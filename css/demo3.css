@@ -56,26 +56,26 @@ h2 {
 }
 
 .pic1 {
-  background-image: url('../img/pic1.jpg');
+  background-image: url('../img copy 3/pic1.jpg');
 }
 
 .pic2 {
-  background-image: url('../img/pic2.jpg');
+  background-image: url('../img copy 3/pic2.jpg');
 }
 
 .pic3 {
-  background-image: url('../img/pic3.jpg');
+  background-image: url('../img copy 3/pic3.jpg');
 }
 
 @media (min-width: 768px) {
   .pic1 {
-    background-image: url('../img/pic1_bigger.jpg');
+    background-image: url('../img copy 3/pic1_bigger.jpg');
   }
   .pic2 {
-    background-image: url('../img/pic2_bigger.jpg');
+    background-image: url('../img copy 3/pic2_bigger.jpg');
   }
   .pic3 {
-    background-image: url('../img/pic3_bigger.jpg');
+    background-image: url('../img copy 3/pic3_bigger.jpg');
   }
 }
 

@@ -56,26 +56,26 @@ h2 {
 }
 
 .pic1 {
-  background-image: url('../img/pic1.jpg');
+  background-image: url('../img copy2/pic1.jpg');
 }
 
 .pic2 {
-  background-image: url('../img/pic2.jpg');
+  background-image: url('../img copy 2/pic2.jpg');
 }
 
 .pic3 {
-  background-image: url('../img/pic3.jpg');
+  background-image: url('../img copy 2/pic3.jpg');
 }
 
 @media (min-width: 768px) {
   .pic1 {
-    background-image: url('../img/pic1_bigger.jpg');
+    background-image: url('../img copy 2/pic1_bigger.jpg');
   }
   .pic2 {
-    background-image: url('../img/pic2_bigger.jpg');
+    background-image: url('../img copy 2/pic2_bigger.jpg');
   }
   .pic3 {
-    background-image: url('../img/pic3_bigger.jpg');
+    background-image: url('../img copy 2/pic3_bigger.jpg');
   }
 }
 
@@ -232,7 +232,6 @@ section .gist-meta {
 .nav ul li ul li {
   width: auto;
   text-align: center;
-
 }
 
 .nav ul li ul li a {
@@ -241,5 +240,4 @@ section .gist-meta {
 
 .nav ul li ul li a:hover {
   background-color: #f3f3f3;
-
 }
