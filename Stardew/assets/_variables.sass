@@ -1,0 +1,56 @@
+@font-face
+    font-family: 'Stardew'
+    src: url("../assets/Stardew_Valley.ttf") format("truetype")
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Staatliches&display=swap')
+
+$font-title-screen: 'Stardew', sans-serif
+$font-title: 'Staatliches', cursive
+$font-main: 'Red Hat Display', sans-serif
+$img-gradient: linear-gradient(to top left, #644d2e, #2e1503)
+$border-color: #a2a9b1
+
+.spacing
+    margin:
+        left: 2%
+        right: 2%
+
+.line
+    border:
+        bottom-style: solid
+        width: 0.15em
+        color: $border-color
+    margin:
+        left: 10%
+        right: 10%
+
+@mixin iframe($ratio)
+    border: none
+    position: relative
+    overflow: hidden
+    padding-bottom: CALC(56.25%*$ratio)
+    iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: CALC(100%*$ratio)
+        height: 100%
+        border: 0
+
+@mixin title-screen($bg-img, $img-gradient)
+    margin: 0
+    padding: 0
+    display: grid
+    place-items: center
+    width: 100%
+    height: 95vh
+    background:
+        image: $bg-img
+        repeat: no-repeat
+        size: cover
+    h1
+        background-image: $img-gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        font: 100% $font-title-screen
+        font-size: 6rem

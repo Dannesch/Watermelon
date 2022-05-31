@@ -1,39 +1,36 @@
-html,body{ 
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Staatliches&display=swap');
+
+*{
   margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-	width:100%;
-	height:100%;
-	background:#000;
 }
 
-html{
+html,
+body {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  background: #F3F3F3;
+}
+
+html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-canvas{
-  display:block;
-}
-
-#particles-js{
+#particles-js {
+  display: block;
   width: 100%;
   height: 100%;
-  background-color: #0000;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
-.hello{
-  background: #fff
-}
-
 .banner {
   position: relative;
   overflow: hidden;
-  background-color: #000;
-  color: #fff;
+  color: #000;
   height: 100%;
   width: 100%;
 }
@@ -49,19 +46,42 @@ canvas{
   height: 100%;
 }
 
-.center{
-  top: 50%;
-  bottom: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .txt-title {
-  font-family: Arial, sans-serif;
-  font-size: 37px;
+  font: 100% 'Staatliches', cursive;
+  font-size: 4em;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  line-height: 1;
-  padding: 20px;
+  margin-top: 15%;
+}
+
+.main-text-area {
+  background-color: #E6E6E6;
+  width: 100%;
+  height: auto;
+}
+
+.main-text-area h1 {
+  font: 100% 'Staatliches', cursive;
+  font-size: 2em;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.main-text-area p {
+  font: 100% 'Red Hat Display', sans-serif;
+  padding: 5%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+@media screen and (max-width: 762px) {
+  .main-text-area p {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .txt-title {
+    margin-top: 50%;
+  }
 }
