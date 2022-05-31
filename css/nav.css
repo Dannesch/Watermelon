@@ -12,6 +12,7 @@
     background-color: #E6E6E6;
     display: flex;
     position: relative;
+    z-index: 999;
 }
 
 .nav p {
