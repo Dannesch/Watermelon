@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Staatliches&display=swap');
 
 * {
     margin: 0;
@@ -17,7 +17,7 @@ body {
 }
 
 .nav p {
-    font-family: 'Koulen', cursive;
+    font-family: 'Staatliches', cursive;
     color: #222121;
     font-size: clamp(40px, 2vw, 4em);
     line-height: 40px;
@@ -45,7 +45,7 @@ body {
 
 .nav ul li a {
     display: block;
-    font-family: 'Koulen', cursive;
+    font-family: 'Staatliches', cursive;
     color: #222121;
     font-size: clamp(1.5em, 2vw, 2em);
     padding: 0;
